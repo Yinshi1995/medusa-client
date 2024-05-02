@@ -27,14 +27,14 @@ const OrderOverview = ({ orders }: { orders: Order[] }) => {
       className="w-full flex flex-col items-center gap-y-4"
       data-testid="no-orders-container"
     >
-      <h2 className="text-large-semi">Nothing to see here</h2>
+      <h2 className="text-large-semi">Тут нічого немає</h2>
       <p className="text-base-regular">
-        You don&apos;t have any orders yet, let us change that {":)"}
+        У вас ще немає жодного замовлення, дозвольте нам це змінити {":)"}
       </p>
       <div className="mt-4">
         <LocalizedClientLink href="/" passHref>
           <Button data-testid="continue-shopping-button">
-            Continue shopping
+            Продовжуйте покупки
           </Button>
         </LocalizedClientLink>
       </div>

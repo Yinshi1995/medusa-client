@@ -10,11 +10,11 @@ import LocalizedClientLink from "@modules/common/components/localized-client-lin
 import CountrySelect from "../country-select"
 
 const SideMenuItems = {
-  Home: "/",
-  Store: "/store",
-  Search: "/search",
-  Account: "/account",
-  Cart: "/cart",
+  Головна: "/",
+  Магазин: "/store",
+  Пошук: "/search",
+  Аккаунт: "/account",
+  Кошик: "/cart",
 }
 
 const SideMenu = ({ regions }: { regions: Region[] | null }) => {
@@ -28,7 +28,7 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
             <>
               <div className="relative flex h-full">
                 <Popover.Button data-testid="nav-menu-button" className="relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none hover:text-ui-fg-base">
-                  Menu
+                  Меню
                 </Popover.Button>
               </div>
 
@@ -85,8 +85,8 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
                         />
                       </div>
                       <Text className="flex justify-between txt-compact-small">
-                        © {new Date().getFullYear()} Medusa Store. All rights
-                        reserved.
+                        © {new Date().getFullYear()} Магазин Медуза. Всі права
+                         зарезервовані.
                       </Text>
                     </div>
                   </div>

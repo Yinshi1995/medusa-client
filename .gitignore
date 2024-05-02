@@ -9,6 +9,8 @@
 /.pnp
 .pnp.js
 
+Docker*
+
 # testing
 /coverage
 
@@ -55,3 +57,5 @@ dump.rdb
 /blob-report/
 /playwright/.cache/
 /playwright/.auth
+
+.vercel

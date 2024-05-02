@@ -35,7 +35,7 @@ const Review = ({
             }
           )}
         >
-          Review
+          Огляд
         </Heading>
       </div>
       {isOpen && previousStepsCompleted && (
@@ -43,10 +43,10 @@ const Review = ({
           <div className="flex items-start gap-x-1 w-full mb-6">
             <div className="w-full">
               <Text className="txt-medium-plus text-ui-fg-base mb-1">
-                By clicking the Place Order button, you confirm that you have
-                read, understand and accept our Terms of Use, Terms of Sale and
-                Returns Policy and acknowledge that you have read Medusa
-                Store&apos;s Privacy Policy.
+                Натискаючи кнопку Розмістити замовлення, ви підтверджуєте, що
+                прочитали, розумієте та приймаєте наші Умови використання,
+                Умови продажу та Політику повернення, а також визнаєте, що
+                прочитали Політику конфіденційності магазину Medusa.
               </Text>
             </div>
           </div>

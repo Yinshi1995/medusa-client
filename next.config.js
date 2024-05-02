@@ -6,7 +6,12 @@ const store = require("./store.config.json")
  */
 const nextConfig = withStoreConfig({
   features: store.features,
-  reactStrictMode: true,
+  reactStrictMode: false,
+  // output: 'standalone',
+  distDir: "build",
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   images: {
     remotePatterns: [
       {

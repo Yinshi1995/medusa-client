@@ -47,27 +47,27 @@ const AddAddress = ({ region }: { region: Region }) => {
         onClick={open}
         data-testid="add-address-button"
       >
-        <span className="text-base-semi">New address</span>
+        <span className="text-base-semi">Нова адреса</span>
         <Plus />
       </button>
 
       <Modal isOpen={state} close={close} data-testid="add-address-modal">
         <Modal.Title>
-          <Heading className="mb-2">Add address</Heading>
+          <Heading className="mb-2">Додайте адресу</Heading>
         </Modal.Title>
         <form action={formAction}>
           <Modal.Body>
             <div className="flex flex-col gap-y-2">
               <div className="grid grid-cols-2 gap-x-2">
                 <Input
-                  label="First name"
+                  label="Ім'я"
                   name="first_name"
                   required
                   autoComplete="given-name"
                   data-testid="first-name-input"
                 />
                 <Input
-                  label="Last name"
+                  label="Прізвище"
                   name="last_name"
                   required
                   autoComplete="family-name"
@@ -75,46 +75,46 @@ const AddAddress = ({ region }: { region: Region }) => {
                 />
               </div>
               <Input
-                label="Company"
+                label="Компанія"
                 name="company"
                 autoComplete="organization"
                 data-testid="company-input"
               />
               <Input
-                label="Address"
+                label="Адреса"
                 name="address_1"
                 required
                 autoComplete="address-line1"
                 data-testid="address-1-input"
               />
               <Input
-                label="Apartment, suite, etc."
+                label="Квартира, під'їзд, поверх"
                 name="address_2"
                 autoComplete="address-line2"
                 data-testid="address-2-input"
               />
               <div className="grid grid-cols-[144px_1fr] gap-x-2">
                 <Input
-                  label="Postal code"
+                  label="Пошт. індекс"
                   name="postal_code"
                   required
                   autoComplete="postal-code"
                   data-testid="postal-code-input"
                 />
                 <Input
-                  label="City"
+                  label="Місто"
                   name="city"
                   required
                   autoComplete="locality"
                   data-testid="city-input"
                 />
               </div>
-              <Input
-                label="Province / State"
+              {/* <Input
+                label="Провінція / Штат"
                 name="province"
                 autoComplete="address-level1"
                 data-testid="state-input"
-              />
+              /> */}
               <CountrySelect
                 region={region}
                 name="country_code"
@@ -122,7 +122,7 @@ const AddAddress = ({ region }: { region: Region }) => {
                 autoComplete="country"
                 data-testid="country-select"
               />
-              <Input label="Phone" name="phone" autoComplete="phone" data-testid="phone-input" />
+              <Input label="Телефон" name="phone" autoComplete="phone" data-testid="phone-input" />
             </div>
             {formState.error && (
               <div className="text-rose-500 text-small-regular py-2" data-testid="address-error">
@@ -139,9 +139,9 @@ const AddAddress = ({ region }: { region: Region }) => {
                 className="h-10"
                 data-testid="cancel-button"
               >
-                Cancel
+                Скасувати
               </Button>
-              <SubmitButton data-testid="save-button">Save</SubmitButton>
+              <SubmitButton data-testid="save-button">Зберегти</SubmitButton>
             </div>
           </Modal.Footer>
         </form>

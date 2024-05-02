@@ -126,10 +126,10 @@ const MobileActions: React.FC<MobileActionsProps> = ({
                 data-testid="mobile-cart-button"
               >
                 {!variant
-                  ? "Select variant"
+                  ? "Виберіть варіант"
                   : !inStock
-                  ? "Out of stock"
-                  : "Add to cart"}
+                  ? "Немає на складі"
+                  : "Додати в кошик"}
               </Button>
             </div>
           </div>

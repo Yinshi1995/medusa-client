@@ -27,7 +27,7 @@ const LineItemPrice = ({
           <>
             <p>
               {style === "default" && (
-                <span className="text-ui-fg-subtle">Original: </span>
+                <span className="text-ui-fg-subtle">Оригінал: </span>
               )}
               <span className="line-through text-ui-fg-muted" data-testid="product-original-price">
                 {formatAmount({

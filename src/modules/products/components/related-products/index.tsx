@@ -20,7 +20,7 @@ export default async function RelatedProducts({
     return null
   }
 
-  // edit this function to define your related products logic
+  // змініть цю функцію, щоб визначити логіку пов'язаних продуктів
   const setQueryParams = (): StoreGetProductsParams => {
     const params: StoreGetProductsParams = {}
 
@@ -64,10 +64,10 @@ export default async function RelatedProducts({
     <div className="product-page-constraint">
       <div className="flex flex-col items-center text-center mb-16">
         <span className="text-base-regular text-gray-600 mb-6">
-          Related products
+          {"Пов'язані товари"}
         </span>
         <p className="text-2xl-regular text-ui-fg-base max-w-lg">
-          You might also want to check out these products.
+          Можливо, вам також буде цікаво переглянути ці товари.
         </p>
       </div>
 

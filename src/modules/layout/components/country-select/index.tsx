@@ -1,5 +1,3 @@
-"use client"
-
 import { Listbox, Transition } from "@headlessui/react"
 import { Region } from "@medusajs/medusa"
 import { Fragment, useEffect, useMemo, useState } from "react"
@@ -66,7 +64,7 @@ const CountrySelect = ({ toggleState, regions }: CountrySelectProps) => {
       >
         <Listbox.Button className="py-1 w-full">
           <div className="txt-compact-small flex items-start gap-x-2">
-            <span>Shipping to:</span>
+            <span>Доставка до:</span>
             {current && (
               <span className="txt-compact-small flex items-center gap-x-2">
                 <ReactCountryFlag

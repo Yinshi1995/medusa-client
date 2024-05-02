@@ -35,6 +35,7 @@ export const paymentInfoMap: Record<
 
 // Add currencies that don't need to be divided by 100
 export const noDivisionCurrencies = [
+  "uah",
   "krw",
   "jpy",
   "vnd",
